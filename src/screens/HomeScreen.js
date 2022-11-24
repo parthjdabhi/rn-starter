@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = props => {
+const HomeScreen = (props) => {
   // return <Text style={styles.text}>HomeScreen T</Text>;
   return <View>
     <Text style={styles.text}>Hi, There</Text>
@@ -18,6 +18,13 @@ const HomeScreen = props => {
     }}>
       <Text>2. ListScreen</Text>
     </TouchableOpacity>
+    <Button 
+      onPress={() => {
+        console.log("1. ImageList button pressed.");
+        props.navigation.navigate('ImageList');
+      }}
+      title="3. ImageList"
+    />
   </View>
 };
 
