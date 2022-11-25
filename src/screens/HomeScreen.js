@@ -41,10 +41,21 @@ const HomeScreen = (props) => {
     />
     <Button 
       onPress={() => {
-        console.log("5. ColorAdjusterScreen button pressed.");
         props.navigation.navigate('ColorAdjusterScreen');
       }}
       title="5. Color Adjuster Screen"
+    />
+    <Button 
+      onPress={() => {
+        props.navigation.navigate('ColorAdjusterScreenReducer');
+      }}
+      title="6. Color Adjuster Screen Reducer"
+    />
+    <Button 
+      onPress={() => {
+        props.navigation.navigate('TextinputScreen');
+      }}
+      title="Text input Screen"
     />
   </View>
 };
