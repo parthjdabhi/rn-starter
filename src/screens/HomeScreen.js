@@ -57,6 +57,12 @@ const HomeScreen = (props) => {
       }}
       title="Text input Screen"
     />
+    <Button 
+      onPress={() => {
+        props.navigation.navigate('LayoutBoxScreen');
+      }}
+      title="LayoutBoxScreen"
+    />
   </View>
 };
 
